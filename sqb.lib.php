@@ -12,7 +12,7 @@ function connexion()
     $dsn = "mysql:host=".HOTE.";dbname=".BD.";charset=utf8mb4";
     return new PDO($dsn, UTIL, MDP, [
         PD::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
-        PD::ATTR_DEFAULT_FETCH_MODE => PDO::ERRMODE_SILENT,
+        PD::ATTR_DEFAULT_FETCH_MODE => PDO::ERRMODE_SILENT, /// Incomplet.
     ])
 }
 
